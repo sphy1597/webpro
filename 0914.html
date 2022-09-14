@@ -5,6 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #container{
+            width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        img#cover{
+            border: 2px solid #000;
+            box-shadow: -5px 5px 5px #ccc;
+        }
+
+        figcaption{
+            color: purple;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        #musician{
+            display: block;
+            width: 90%;
+            margin: 15px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        #muxician img{
+            float: left;
+            margin: 5px 15px;
+        }
+
+        h1{
+            width: 90%;
+            margin: 5px 15px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #222;
+            color: white;
+        }
+        p{
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+
+
+        
+    </style>
 </head>
 <body>
 
@@ -198,7 +251,52 @@
             
         </tr>
     </table>
+
+    <hr>
+
+    <h1>오름</h1>
+    <h2>산굼부리</h2>
+    <img src="sangumburi">
+    <h3>소개</h3>
+
+    <hr>
+
+    <figure>
+        <img src="spring1.jpg" alt="유채꽃풍경">
+        <img src="spring2.jpg" alt="산사에 핀 지목련">
+
+        <figcaption> <b>봄이 오는 길목</b> - 유채꽃풍경 & 신사에 핀 지목련</figcaption>
+    </figure> 
+
+    <hr>
+
+    <h1>바흐(Johann Sebastian Bach, 1685 ~ 1750</h1>
+    <div id="musician">
+        <img src="bach.jpg">
+        <p>서양 음악의 아버지라고 일컫는 바흐는 바로크 시대의 최후 어쩌고...</p>
+        <p>바로크 으망ㄱ에 있어서 바흐는 대위법 기술의 정수를 ...</p>
+        <h2>Sinfonia</h2>
+        <audio controls>
+            <source src="bach.mp3">
+            <source src="bach.ogg">
+        </audio>
+    </div>
     
+    <h1>헨델(Georg Friedrich Handel, 1685 ~ 1759)</h1>
+    <div id="musician">
+        <img src="handel.jpg">
+        <p>바로크 시대의 작곡가로 음악의 어머니라고 불린다.</p>
+        <p>그의 음악은 명쾌하고 호탕하고 신선하며 생생한 리듬에 성...</p>
+        <p>헨델은 그의 극적 작품에서 명성을 얻었지만 바로크적 협주...</p>
+        <h2>Suite no.1 in A major (1st set)</h2>
+        <audio controls>
+            <source src="handel.mp3">
+            <source src="handel.ogg">
+        </audio>
+    </div>
+
+
+
     <hr>
 
     <h1>비디오 삽입</h1>
