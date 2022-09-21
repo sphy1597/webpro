@@ -1,0 +1,30 @@
+body{
+    background-image: url(http://cdn.edujin.co.kr/news/photo/202209/39844_81449_2351.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-size: 60%;
+
+}
+
+h1{
+    background: url(https://gsa.sunmoon.ac.kr/images/main/topVisual1.jpg)
+    no-repeat top left fixed;
+    padding: 10px 10px 10px 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+
+}
+p{
+    font-size: 16px;
+    line-height: 25px;
+}
+ul{
+    list-style-type: none;
+}
+.bigger{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}

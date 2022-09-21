@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #info {
+            width: auto;
+            height: 200px;
+            border: 1px solid black;
+            padding: 6px;
+            background: #ededed;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul#personal li>label,
+        ul#opt li>label {
+            width: 80px;
+            float: left;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+        }
+
+        ul#sel1 li,
+        ul#sel2 li {
+            display: inline;
+            float: left;
+        }
+
+        #buttons {
+            text-align: center;
+        }
+    </style>
+
+    
+
+     
+
+</head>
+
+<body>
+
+    <form>
+        <p><label for="username">이름 : </label>
+            <input type="text" , id="username">
+        </p>
+        <p><label for="userid">아이디 : </label>
+            <input type="text" , id="userid">
+        </p>
+
+
+        <p><label>이름 : <input type="text"></label></p>
+        <p><label>아이디 : <input type="text"></label></p>
+
+        <hr><br>
+
+        <fieldset>
+            <legend>개인정보</legend>
+            <p><label for="username">이름</label>
+                <input type="text" , id="username">
+            </p>
+
+            <p><label for="mail">메일주소</label>
+                <input type="text" , id="mail">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <p><label for="userid">아이디</label>
+                <input type="text" , id="userid">
+            </p>
+            <p><label for="password">비밀번호</label>
+                <input type="password" , id="password">
+            </p>
+        </fieldset>
+
+
+        <hr><br>
+
+        <ul id="personal">
+            <li>
+                <label for="username">이름</label>
+                <input type="text" name="username" id="username" size="20" maxlength="20">
+            </li>
+
+            <li>
+                <label for="pwd">비밀번호</label>
+                <input type="password" name="pwd" id="pwd" size="20" maxlength="20">
+            </li>
+        </ul>
+
+        <hr><br>
+
+        <ul id="sel1">
+            <li>
+                <input type="radio" id="free" name="pay" value="free">
+                <label for="free">무료(교내참가자)</label>
+            </li>
+
+            <li>
+                <input type="radio" id="paid" name="pay" value="paid">
+                <label for="paid">유료(교외참가자)</label>
+            </li>
+        </ul>
+
+        <hr><br>
+
+        <ul id="sel2">
+            <li>
+                <input type="checkbox" id="html5" value="semantic">
+                <label for="html5">html5 시맨틱</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="css3" value="css3">
+                <label for="css3">CSS3</label>
+            </li>
+            <li>
+                <input type="checkbox" id="str" value="webstorage">
+                <label for="str">webstorage</label>
+            </li>
+            <li>
+                <input type="checkbox" id="sock" value="websock">
+                <label for="str">Web Storage</label>
+            </li>
+            <li>
+                <input type="checkbox" id="cnv" value="websocket">
+                <label for="cnv">Canvas</label>
+            </li>
+            <li>
+                <input type="checkbox" id="geo" value="geolocation">
+                <label for="geo">Geolocation</label>
+            </li>
+        </ul>
+
+        <hr><br>
+
+        <tr>
+            <label for="photo">
+                <th>프로필사진</th>
+            </label>
+            <td><input type="file" name="photo" id="photo"></td>
+        </tr>
+
+        <hr><br>
+
+        <h3> &lt; input&gt; 태그로 만드는 버튼 </h3>
+        <input type="submit" value="전송하기"> 이 버튼을 클릭하면 폼을 전송합니다 <br>
+        <input type="reset" value="다시쓰기"> 이 버튼을 클릭하면 폼의 내용이 지워집니다. <br>
+        <input type="button" value="그냥 버튼"> 이 버튼에는 자바스크립트 함수를 연결해야 합니다.<br>
+        <input type="image"
+            src="data:image/jpeg;base64,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">
+        이 버튼도 클릭하면 폼을 전송합니다<br>
+
+        <hr><br>
+
+    </form>
+
+    <form>
+        <label for="mail">메일주소</label>
+        <input type="email" id="mail" size="20">
+
+        <label for="homep">홈페이지(URL)</label>
+        <input type="url" id="homep" maxlength="50">
+
+        <label for="mysearch">상품 검색</label>
+        <input type="search" id="mysearch" size="20">
+
+
+        <hr><br>
+
+        <li>
+            <label for="no">주문개수</label>
+            <input type="range" id="no" min="1" , max="10" , step="1" , value="1">
+        </li>
+        <li>
+            <label for="size">사이즈</label>
+            <input type="number" id="size" min="85" max="100" step="5" value="85">
+        </li>
+
+        <hr><br>
+
+        <label for="order">주문일</label>
+        <input type="datetime-local">
+
+        <hr><br>
+
+        <select>
+            <option selected>가까운 분야 선택</option>
+            <option value="student">학생</option>
+            <option value="webdev">웹개발</option>
+            <option value="webdes">웹 디자인</option>
+            <option value="tutor">교육관련</option>
+            <option value="etc">기타</option>
+
+        </select>
+
+
+        <hr><br>
+
+        <label for="memo">남길 말씀</label>
+        <textarea id="memo" cols="60" rows="15"></textarea>
+
+
+        <hr><br>
+
+        <li>
+            <label for="username">이름 </label>
+            <input type="text" id="username" autofocus placeholder="공백없이 입력하세요" required>
+
+        </li>
+
+        <li>
+            <label for="mail">메일주소</label>
+            <input type="email" id="mail" autocomplete="off" placeholder="abcd@abcd.com" required>
+        </li>
+    </form>
+
+    <hr><br>
+
+    <div id="container">
+        <div id="info">
+            <h3>세미나 정보</h3>
+            <ol>
+                <li>주제 : 차세대 웹 표준 기술 HTML</li>
+                <li>일정 : 5월 12일 14:00 ~ 17:00</li>
+                <li>장소 : 공학관 2층 세미나실</li>
+                <li>인원 : 선착순 100명</li>
+                <li>비용 : 본교 학생 무료 (외부 참가자 5000원)</li>
+                <li>참가신청 : 아래 양식에 빠짐없이 기입하여 접수해 주세요</li>
+            </ol>
+        </div>
+
+        <form action="register.php" id="register">
+            <h3>개인 정보</h3>
+            <ul id="personal">
+                <li>
+                    <label for="username">이름</label>
+                    <input type="text" name="username" id="username" size="20" maxlength="20">
+                </li>
+                <li>
+                    <label for="pwd">비밀번호</label>
+                    <input type="password" name="pwd" id="pwd" size="20" maxlength="20">
+                </li>
+            </ul>
+
+            <h3>참가 정보</h3>
+            <ul>
+                <li>
+                    <fieldset>
+                        <legend>참가 유형 선택</legend>
+                        <ul id="sel1">
+                            <li>
+                                <input type="radio" id="free" name="pay" value="free">
+                                <label for="free">무료(교내참가자)</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="paid" name="pay" value="paid">
+                                <label for="paid">유료(교외참가자)</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+
+                <li>
+                    <fieldset>
+                        <legend>관심 분야 선택</legend>
+                        <ul id="sel2">
+                            <li>
+                                <input type="checkbox" id="html5" value="semantic">
+                                <label for="html5">html5 시맨틱</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="css3" value="css3">
+                                <label for="css3">CSS3</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="str" value="webstorage">
+                                <label for="str">webstorage</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sock" value="websock">
+                                <label for="str">Web Storage</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cnv" value="websocket">
+                                <label for="cnv">Canvas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="geo" value="geolocation">
+                                <label for="geo">Geolocation</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </li>
+
+                <h3>선택 사항</h3>
+                <ul id="opt">
+                    <li>
+                        <label for="job">직업</label>
+                        <select>
+                            <option selected>가까운 분야 선택</option>
+                            <option value="student">학생</option>
+                            <option value="webdev">웹개발</option>
+                            <option value="webdes">웹 디자인</option>
+                            <option value="tutor">교육관련</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="memo">남길 말씀</label>
+                        <textarea name="memo" cols="60" rows="15"></textarea>
+                    </li>
+
+                </ul>
+
+                <hr>
+
+                <div id="buttons">
+                    <label><input type="submit" value="접수하기"></label>
+                    <label><input type="reset" value="다시쓰기"></label>
+                </div>
+
+
+            </ul>
+
+        </form>
+
+    </div>
+
+   
+
+</body>
+
+</html>
