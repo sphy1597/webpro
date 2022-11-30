@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script src="1012.js"></script>
+
+    <br><hr>
+    <form >
+        <input type="button" value="4로 바꾸기" onclick="changeTo('4.jpg')">
+        <input type="button" value="2로 바꾸기" onclick="changeTo('2.jpg')">
+    </form>
+    <div>
+        <img src="2.jpg" id="num">
+    </div>
+
+    <br><hr>
+
+    <h1>스터디 회원 모집</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" id="logo" alt="HTML5 공식 로고">
+    
+
+    <br><hr>
+
+    <h1>스터디 회원 모집</h1>
+    <p class="accent"> 신입생 대상</p>
+    <p><span class="accent">웹 표준 기술</span>에 대해 같이 공부할 스터디 회원을 모집 합니다.</p>
+
+
+    <br><hr>
+    
+    <h1>웹 표준 기술은 ? </h1>
+    <p>숫자 4를 클릭하세요</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/LetterH.svg/1200px-LetterH.svg.png" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/LetterT.svg/1200px-LetterT.svg.png" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Letter_m.svg/1200px-Letter_m.svg.png" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/LetterL.svg/1200px-LetterL.svg.png">
+    <img src="4.jpg" onclick="change('5.jpg')" id="html">
+
+
+    <br><hr>
+
+    <p>질문 : <span id="quest">웹 표준 기술은 ?</span></p>
+    <p>해답 : <span id="sol">HTML5</span></p>
+    <hr>
+
+    <br><hr>
+
+    
+    <p>질문 : <span id="quest">웹 표준 기술은 ?</span></p>
+    <p>해답 : <span id="sol">HTML5</span></p>
+    <form> 
+        <input type="button" value="해답 바꾸기" onclick="modifySol('html 5 + css3')">
+    </form>
+    <hr>
+    
+    <br><hr>
+    <div>
+        <img src="2.jpg" id="num2" onmouseover="changeTo2('4.jpg')" onmouseout="changeTo2('2.jpg')">
+    </div>
+
+
+    <br><hr>
+
+    <div id="first" onmouseover="changeStyle()">
+        <p>자바스크리트는 HTML 태그의 내용이나 속성뿐 아니라 ... </p>
+    </div>
+
+    <br><hr>
+
+    <h1 id="ttl">스터디 회원 모집</h1>
+    <a href="#" onclick="addParagraph()"><p>더보기!</p></a>
+    <div id="info"></div>
+
+
+    <br><hr>
+
+    <h1>스터디 회원 모집</h1>
+    <a href="#" onclick="addImage()"><p>이미지보기</p></a>
+    <div id="info2"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom연습 </title>
+    <style>
+        input{
+            margin: 10px 30px 50px 20px;
+            width: 80px;
+            padding: 10px;
+            background-color: #a9fcff;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+        img{
+            margin-left: 50px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <input type="button" value="on" onclick="turnLight('on')">
+        <input type="button" value="off" onclick="turnLight('off')">
+    </form>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAACXl5cXFxdGRkbw8PBZWVkSEhL5+fnf398cHBza2tpQUFBkZGT8/Pzu7u6ysrKioqLLy8uKiopubm7T09O7u7slJSXFxcWEhIRBQUGcnJwxMTHn5+c7Ozt+fn50dHQtLS2tra0LCwtLS0uQkJCZ3TtwAAAEx0lEQVR4nO2c2XLiMBBFzWJW47AkwQQI2/D/vzhMmCK+LVlSh0pNk7nn1WqhE1m7nCwjhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEELInZSDK+W/Lsh3sJ23d8WydWVZ7NvV9gd5DuarbsvlbVcNEnNYt1VM67FHXexR7zfeLT16V0b7l6Q8GjPw06vHvutiu1q/6i2S42EazyTr6Eo5qcf6Xp8AhdJvk5Dn6PVhDYe9xFy7sXfVqGFbke8q3LGaNMxjDRDZDB/NcK7L90KoxzFoeNRl+8H5kQw1TfCT3eMYnnWZ3tg/iuHMH7tZTKthPsiH8+m5oRta/XvDXwmCr94ffc0hUVk99z3JZgmGvSiLRsMiGtvcVG4M3XJ3zltPwnx2cJPO44bxIgBg6CuHGnemu8gbkg7WTtq+Ny0Ypi5I/gKGwVE3kZUs8zKU61Mhk098ySwZjmWJ95EAZ2DxjfyWDOU7uo5GyI7J954aMpRzmYa+EahEzMJNYsdwcMDCBiZiNWQtPjkp7BiKKvT2Gh5EW3THfTOGJbbCQ3JZRI/qtEQzhmLJ5B+9fTxhoNN6zRg+QzmfFZH4nr7Lx1YMS6wJTW4lTlLH4rEVQ+wTNVUo1yNywLBiiC+prIcw+akeK7dlrRiC4FIZvIdosQYwYohT0vh0DcGZjdgkNmKIzVCbVz6qR4uGaMQQ1k0d9dkZjPo9fGbEEIqo60n/AKth8QcyYginMG11ODZE1LBhiA0pfp4kwY4Ki2Jjn2YYKGEKA4iv4BkY9oM4a6+uIjY8hmMdfOGPBfG4l6HZL5ULE81+adjwBdK6q9go8Jbj8sKgoX9TMAz0VOYNRz/e8OfX4ekL7RAupVg0vLsvhfUTXtyxYYjj4b2jBc4YbBhuoQ7Sd6Fu8fBbeP/EhmF5qKdN2exGcKMOy2nDMINz3YSDRgHuJgfWFhGCs7b7DGGb5k1tGAoHw20ewunEwfAlHBtZ1GIlqAdEGA7FK2Bj9SQaUsqVwzo42IhmbMQQlz+9eACAu96iJEYMsatRFgQPdZYi2Ioh7lvrthPxFZe7PFYMccw+qXbb8HytEk+tGIpDfE0lYhV2ZEdsxhBfU836Ai+77+VjM4Y5lFOxZyqOuZ1L0WYMsx2WNPXbBdzicQ9IDRliX+OpDH+UuMPnrkvsGMpKTMoxF7eMPFNaQ4ayEkfxc1Ip6Kt4Q4buNbXYUng7EgG+/smSYeZ85BS+FzWVyb27dKYMncuJoS9ithMntfdIx5Sh75b33t8atws3qX9vwJahuJJxpSdnmpeJmi+dOxR+YMyw9F/Enxw/39bx1KfXfBhgzNC5g1mvo6JXvJ+annaaCmDNMMubvxoN0WkcPM0ZuqN4CqPmn7dnmA1SP678ZBPYnTNoqP/2aR/KzKRhVsnpWIhTePPRpmGWy4VGM5PI/rFRw8vKNu3MYBM9qDJrmPA5fqu1TLhcZNjwUo/u5LqOZzrnATYBrBleJtjHpqGjmCUeFR86oxtaw6Jfi/0ewwt5tZCWxaJK322EMzDtb98Rq6PM59PZun1ur2fTef6D/nULIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBDy3/EbEwZCvA+IhiYAAAAASUVORK5CYII=" id="bulb" >
+
+    <script>
+        function turnLight(onoff){
+            myImg = document.getElementById("bulb");
+            document.get
+            if(onoff == "on")
+                myImg.src = "https://oneminuteenglish.org/wp-content/uploads/2021/02/Add-a-subheading-4.png";
+            else 
+                myImg.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAACXl5cXFxdGRkbw8PBZWVkSEhL5+fnf398cHBza2tpQUFBkZGT8/Pzu7u6ysrKioqLLy8uKiopubm7T09O7u7slJSXFxcWEhIRBQUGcnJwxMTHn5+c7Ozt+fn50dHQtLS2tra0LCwtLS0uQkJCZ3TtwAAAEx0lEQVR4nO2c2XLiMBBFzWJW47AkwQQI2/D/vzhMmCK+LVlSh0pNk7nn1WqhE1m7nCwjhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEELInZSDK+W/Lsh3sJ23d8WydWVZ7NvV9gd5DuarbsvlbVcNEnNYt1VM67FHXexR7zfeLT16V0b7l6Q8GjPw06vHvutiu1q/6i2S42EazyTr6Eo5qcf6Xp8AhdJvk5Dn6PVhDYe9xFy7sXfVqGFbke8q3LGaNMxjDRDZDB/NcK7L90KoxzFoeNRl+8H5kQw1TfCT3eMYnnWZ3tg/iuHMH7tZTKthPsiH8+m5oRta/XvDXwmCr94ffc0hUVk99z3JZgmGvSiLRsMiGtvcVG4M3XJ3zltPwnx2cJPO44bxIgBg6CuHGnemu8gbkg7WTtq+Ny0Ypi5I/gKGwVE3kZUs8zKU61Mhk098ySwZjmWJ95EAZ2DxjfyWDOU7uo5GyI7J954aMpRzmYa+EahEzMJNYsdwcMDCBiZiNWQtPjkp7BiKKvT2Gh5EW3THfTOGJbbCQ3JZRI/qtEQzhmLJ5B+9fTxhoNN6zRg+QzmfFZH4nr7Lx1YMS6wJTW4lTlLH4rEVQ+wTNVUo1yNywLBiiC+prIcw+akeK7dlrRiC4FIZvIdosQYwYohT0vh0DcGZjdgkNmKIzVCbVz6qR4uGaMQQ1k0d9dkZjPo9fGbEEIqo60n/AKth8QcyYginMG11ODZE1LBhiA0pfp4kwY4Ki2Jjn2YYKGEKA4iv4BkY9oM4a6+uIjY8hmMdfOGPBfG4l6HZL5ULE81+adjwBdK6q9go8Jbj8sKgoX9TMAz0VOYNRz/e8OfX4ekL7RAupVg0vLsvhfUTXtyxYYjj4b2jBc4YbBhuoQ7Sd6Fu8fBbeP/EhmF5qKdN2exGcKMOy2nDMINz3YSDRgHuJgfWFhGCs7b7DGGb5k1tGAoHw20ewunEwfAlHBtZ1GIlqAdEGA7FK2Bj9SQaUsqVwzo42IhmbMQQlz+9eACAu96iJEYMsatRFgQPdZYi2Ioh7lvrthPxFZe7PFYMccw+qXbb8HytEk+tGIpDfE0lYhV2ZEdsxhBfU836Ai+77+VjM4Y5lFOxZyqOuZ1L0WYMsx2WNPXbBdzicQ9IDRliX+OpDH+UuMPnrkvsGMpKTMoxF7eMPFNaQ4ayEkfxc1Ip6Kt4Q4buNbXYUng7EgG+/smSYeZ85BS+FzWVyb27dKYMncuJoS9ithMntfdIx5Sh75b33t8atws3qX9vwJahuJJxpSdnmpeJmi+dOxR+YMyw9F/Enxw/39bx1KfXfBhgzNC5g1mvo6JXvJ+annaaCmDNMMubvxoN0WkcPM0ZuqN4CqPmn7dnmA1SP678ZBPYnTNoqP/2aR/KzKRhVsnpWIhTePPRpmGWy4VGM5PI/rFRw8vKNu3MYBM9qDJrmPA5fqu1TLhcZNjwUo/u5LqOZzrnATYBrBleJtjHpqGjmCUeFR86oxtaw6Jfi/0ewwt5tZCWxaJK322EMzDtb98Rq6PM59PZun1ur2fTef6D/nULIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBDy3/EbEwZCvA+IhiYAAAAASUVORK5CYII=";
+        }
+    </script>
+    
+</body>
+</html>

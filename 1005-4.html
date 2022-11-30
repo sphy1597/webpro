@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>이벤트 당첨자 발표</title>
+            <style>
+                body {
+                    text-align: center;
+                    font-size: 30px;
+                }
+                p {
+                    padding: 20px auto;
+                }
+                .title {
+                    padding:5px;
+                    border:1px solid #ccc;
+                    background: #b2fea7;
+                }
+                #total, #result {
+                    width: auto;
+                    padding-left: 20px;
+                    color:red;
+                }
+            </style>
+    </head>
+
+<body>
+    <img src="data:image/jpeg;base64,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">
+    <p><span class="title">전체 응모자 수:</span><span id="total"></span></p>
+    <p><span class="title">당첨번호 :</span><span id="result"></span></p>
+    
+    <script>
+        var seed = prompt("전체 응모자 수 : ");
+
+        var today = new Date();
+        var current = today.getSeconds();
+        var rnum1 = (current % seed) + 1;
+        var rnum2 = ((current+current) % seed) + 1;
+        var rnum3 = ((current*current) % seed) + 1;
+
+        var totalArea = document.getElementById("total");
+        var resultArea = document.getElementById("result");
+        totalArea.innerHTML=seed + "명";
+        resultArea.innerHTML = rnum1 + "번, " + rnum2 + "번, " + rnum3 + "번";
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200;
+            height: 130;
+        }
+    </style>
+    <script>
+        function change(bgcolor, txtcolor){
+            document.bgColor = bgcolor;
+            document.fgColor = txtcolor;
+        }
+        function zoomIn(){
+            document.getElementById("img").width = "500";
+            document.getElementById("img").heigth = "330";
+        }
+        function zoomOut(){
+            document.getElementById("img").width = "200";
+            document.getElementById("img").heigth = "130";
+        }
+    </script>
+</head>
+<body>
+
+    <input type="button" value="black" onclick="change('black', 'black')">
+    <input type="button" value="blue" onclick="change('blue', 'blue')">
+    <input type="button" value="red" onclick="change('red', 'red')">s
+    <input type="button" value="gray" onclick="change('gray', 'gray')">
+    <input type="button" value="white" onclick="change('white', 'white')">
+    <div>
+     <img src="https://img.danawa.com/prod_img/500000/279/192/img/14192279_1.jpg?shrink=330:330&_v=20210518140020" id="img" onmouseover="zoomIn()" onmouseout="zoomOut()">
+    </div>
+</body>
+</html>
